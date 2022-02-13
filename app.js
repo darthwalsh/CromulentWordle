@@ -62,7 +62,7 @@ async function updatePoss() {
 
       const input = td.firstChild;
       for (const c of input.value) {
-        poss = poss.filter(s => filter(c, i, s));
+        poss = poss.filter(s => filter(c.toLowerCase(), i, s));
       }
     }
   }
